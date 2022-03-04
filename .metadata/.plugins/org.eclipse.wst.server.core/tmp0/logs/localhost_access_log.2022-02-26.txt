@@ -1,0 +1,11 @@
+127.0.0.1 - - [26/Feb/2022:16:22:40 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Feb/2022:16:22:41 +0530] "GET /002.CarryingDataFormToServlet/ HTTP/1.1" 404 785
+0:0:0:0:0:0:0:1 - - [26/Feb/2022:16:22:51 +0530] "GET /002.CarryingDataFormToServlet/simple HTTP/1.1" 405 751
+0:0:0:0:0:0:0:1 - - [26/Feb/2022:16:23:02 +0530] "GET /002.CarryingDataFormToServlet/index.html HTTP/1.1" 404 795
+0:0:0:0:0:0:0:1 - - [26/Feb/2022:16:23:38 +0530] "GET /002.CarryingDataFormToServlet/simple HTTP/1.1" 405 751
+0:0:0:0:0:0:0:1 - - [26/Feb/2022:16:24:06 +0530] "GET /002.CarryingDataFormToServlet/TraineesInfo.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [26/Feb/2022:16:24:19 +0530] "POST /002.CarryingDataFormToServlet/simple HTTP/1.1" 200 89
+127.0.0.1 - - [26/Feb/2022:16:26:03 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Feb/2022:16:26:04 +0530] "GET /003.CarryingNDataToServlet/CarryiingNDataServlet HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [26/Feb/2022:16:29:03 +0530] "GET /003.CarryingNDataToServlet/TraineesInfo.html HTTP/1.1" 200 957
+0:0:0:0:0:0:0:1 - - [26/Feb/2022:16:29:19 +0530] "POST /003.CarryingNDataToServlet/CarryiingNDataServlet HTTP/1.1" 200 141

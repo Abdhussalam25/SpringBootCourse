@@ -1,0 +1,50 @@
+Features in Java8
+-------------------
+1. Interface Enhancement
+2. Functional Interface
+3. Lambda Expression
+4. Stream API
+5. Date & Time API
+
+What is Lambda expression?
+To provide implementation of interfaces with less code.
+
+Lamda expression consist of 3 componensts:
+1.Argument list: parameters passed it can be empty
+
+Functional Interface
+
+=============
+
+Stream APi======
+A sequence of elements in collection from a container
+
+
+
+Q.
+We have a functional interface PrintMessageInNewLine having 
+abstract method called printMessageInNewLine(String message)
+
+Streams====
+java.util.stream
+we have java.io.stream where we have file related operations
+util.stream to work on collection operators
+1) Filter -- filtering acc to condition
+2) Map -- repeat some operation on each 
+     element  ex -  a -> a*3
+3)distinct()
+4) sorted()
+5)skip(long n) it will skip no of elements which we are specifying in the object.
+6)peek() is useful for debugging the operation whether it is functioning properly or not.
+
+Terminating opeations
+1)count()  -- to count the no of elements inside the stream.
+2)foreach
+3)collect(Collectors.toList)
+
+
+// Note colon operator can be possible only if there is no arguments bcoz we have to call without paranthesis.
+filter is a lazy opearation ins stream
+
+
+

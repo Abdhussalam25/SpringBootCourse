@@ -1,0 +1,87 @@
+package com.training.test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import com.training.Account;
+import com.training.Bank;
+
+import junit.framework.Assert;
+
+class BankTest {
+
+	Bank bank;
+	Account account1;
+	Account account2;
+	Account account3;
+	Account account4;
+	Account account5;
+	List<Account> accounts;
+	
+	@BeforeEach
+	void setUp() throws Exception {
+		bank = new Bank();
+		account1 = new Account("testname1", 12345, 6000);
+		account2 = new Account("testname2", 54321, 12000);
+		account3 = new Account("testname3", 78965, 5000);
+		account4 = new Account("testname4", 12345, 8000);
+		account5 = new Account("testname5", 78541, 7000);
+		
+		accounts = new ArrayList<Account>();
+		
+	}
+
+	@Test
+	void testAddNewAccount() {
+		accounts = bank.addNewAccount(account1);
+		Assert.assertEquals(1, accounts.size());
+		accounts = bank.addNewAccount(account2);
+		Assert.assertEquals(2, accounts.size());
+//		accounts = bank.addNewAccount(account3);
+//		Assert.assertEquals(3, accounts.size());
+//		accounts = bank.addNewAccount(account4);
+//		Assert.assertEquals(4, accounts.size());
+//		accounts = bank.addNewAccount(account5);
+//		Assert.assertEquals(5, accounts.size());
+		
+	}
+
+	@Test
+	void testDepositAmount() {
+		
+	}
+
+	@Test
+	void testWithdrawAmount() {
+		
+	}
+
+	@Test
+	void testTransferBetweenAccounts() {
+		
+	}
+
+	@Test
+	void testRetreiveAll() {
+		
+	}
+
+	@Test
+	void testSearchById() {
+		
+	}
+
+	@Test
+	void testModAccount() {
+		
+	}
+
+	@Test
+	void testDelAccount() {
+		
+	}
+
+}

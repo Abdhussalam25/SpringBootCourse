@@ -1,0 +1,8 @@
+package com.entities;
+
+public class Vendor {
+
+	private int vendorId;
+	private String vendorString;
+	
+}

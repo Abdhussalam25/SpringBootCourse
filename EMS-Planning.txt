@@ -1,0 +1,47 @@
+ 
+ Employee Management System
+
+Project Givent By:Apex International School
+Company : Cyberinforminies.com
+
+Entity:
+  private int empId
+  private String empFName;
+  private String empLastName;
+  private Address address;
+  private String department;
+  private float basicSalary;
+
+
+private double grossSalary;
+
+Loginpage, two home page --> 
+normal home page, admin page
+
+
+EmployeeInterface:
+ 
+   void addEmployee();
+   Employee ModById(int empId);
+   List<Employee> delById(int empId);
+   List<Employee> showAllEmployee();
+   List<Employee> empByDept(String dept);
+   Employee searchById(int empId);
+
+
+	Steps:
+
+1) Create a web application   -- done
+	a)convert into maven projec
+	b)add dependencies      ------done
+2) Home page
+3) login page  --- LoginServlet
+4)employee form  --- employee servlet
+5)Database connectivity
+6) Create Enitity ofEmployee
+7)Interface
+8)interfaceimpl
+7) Result page
+
+
+              

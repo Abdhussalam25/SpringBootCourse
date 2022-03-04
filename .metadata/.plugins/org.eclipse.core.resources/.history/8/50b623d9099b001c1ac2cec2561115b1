@@ -1,0 +1,119 @@
+package com.training;
+
+import java.util.List;
+
+public class Bank {
+
+	private List<Account> accounts;
+	
+//	public Account(String accountName, int accountId, int depositAmount) {
+//		super();
+//		if(depositAmount >= minBalance) {
+//		AccountName = accountName;
+//		AccountId = accountId;
+//		this.balance = depositAmount;
+//		
+//		}else {
+//			System.err.println("Initial amount has to be greater or equal to minimum balance 5000");
+//		}
+//				
+//	}
+	
+	public List<Account> addNewAccount(Account account){
+		
+			accounts.add(account);	
+			System.out.println("Account added successfully");
+		
+		return accounts;		
+	}
+	
+	public Account depositAmount(String accountName, int accountId, int amount) {
+		Account temp = null;
+		
+		for(Account acc: accounts) {
+			if(acc.getAccountName().equals(accountName) && acc.getAccountId() == accountId) {
+				acc.depositAmount(amount);
+				temp = acc;
+				break;
+			}
+			
+		}		
+	return temp;		
+	  	
+	}
+	//BAnk withdrawal
+	public Account withdrawAmount(String accountName, int accountId, int amount) {
+		Account temp = null;
+		
+		for(Account acc: accounts) {
+			if(acc.getAccountName().equals(accountName) && acc.getAccountId() == accountId) {
+				acc.withDrawAmount(amount);
+				temp = acc;
+				break;
+			}
+			
+		}		
+	return temp;		
+	  	
+	}
+	//  app transaction
+	public void transferBetweenAccounts(Account acc1, Account acc2, int amount) {
+		
+		if(acc1.withDrawAmount(amount))
+			acc2.depositAmount(amount);
+		else
+			System.out.println("Sorry Transaction failed");	
+		
+	}
+	
+	public List<Account> retreiveAll(){
+		
+		return accounts;
+	}
+	
+	public Account searchById(Account acc) {
+		Account temp = null;
+		for(Account acct: accounts) {
+			if(acct.getAccountName() == acc.getAccountName() && acct.getAccountId() == acc.getAccountId())
+				temp = acct;
+			
+		}
+		return temp;
+		
+	}
+	
+	public Account modAccount(Account acc, String name) {
+		Account temp = null;
+		for(Account acct: accounts) {
+			if(acct.getAccountName() == acc.getAccountName() && acct.getAccountId() == acc.getAccountId())
+				{
+				acct.setAccountName(name);				
+				temp = acct;
+			     break;
+				}
+		}
+		return temp;
+		
+	}
+	
+   public List<Account> delAccount(Account acc){
+	   for(Account acct: accounts) {
+			if(acct.getAccountName() == acc.getAccountName() && acct.getAccountId() == acc.getAccountId())
+				{
+				accounts.remove(acct);
+			     break;
+				}
+		}
+	   
+	   
+	   return accounts;
+	   
+	   
+   }
+	
+
+	
+	
+	
+	
+}

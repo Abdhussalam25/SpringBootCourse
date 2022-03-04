@@ -1,0 +1,12 @@
+
+Employee:
+  String lastName;
+  Date birthDate;
+  String contactNumber;
+  EmployeeAddress address;
+  
+EmployeeAddress
+    private String houseNumber;
+    		String state;
+    		String country;
+    		Long pinCode;

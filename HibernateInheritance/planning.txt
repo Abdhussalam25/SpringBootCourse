@@ -1,0 +1,17 @@
+1)create class Employee
+    int empId;
+    String empFirstName
+    String empLastName
+    String empEmailId
+    
+ 2) Create RegularEmployee extends Employee
+      -->inhering employee
+      float empSalary;
+      float bonus;
+      
+ 3)ContractualEmployee extends Employee
+        float payPerHour;
+        String projDuration;
+        
+ 4)employee.hbm.xml  create this file
+     

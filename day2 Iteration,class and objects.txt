@@ -1,0 +1,516 @@
+Loop/Iterative Statement:
+
+start:1
+stop:11
+step:+1
+1. Entry Control loop:
+while loop:
+var=intialize;
+while(expression){
+	set of statements
+	increment/decrement of loop counter
+}
+Q1.Java code to print all numbers from 1 to 10.
+----------------------------------------------
+package whileloop;
+//Q1.Java code to print all numbers from 1 to 10.
+public class PrintOneToTen {
+
+	public static void main(String[] args) {
+		//I-P-O
+		int num=1;
+		while(num<11) {
+			System.out.print("\t"+num);
+			num=num+1;
+		}
+	}
+}
+Q2.Java code to print all numbers from 1 to N.
+------------------------------------------------
+package whileloop;
+import java.util.Scanner;
+//Q2.Java code to print all numbers from 1 to N.
+public class PrintOneToN {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("\nEnter Value for N:");
+		int N=sc.nextInt();
+		int i=1;
+		while(i<N+1)
+		System.out.print(i+++"\t");
+	}
+}
+
+Q3.Java code to print all numbers between two numbers.
+------------------------------------------------------
+package whileloop;
+import java.util.Scanner;
+//Q3.Java code to print all numbers between two numbers.
+public class PrintAllNumbersBetweenAnyTwoNumbers {
+	public static void main(String[] args) {
+		// I-P-O
+		int i,j;
+		Scanner sc=new Scanner(System.in);
+		System.out.print("\nEnter Value for i:");
+		i=sc.nextInt();
+		System.out.print("\nEnter Value for j:");
+		j=sc.nextInt();
+		if(i>j) {
+			int temp=i;
+			i=j;
+			j=temp;
+		}
+		if(i==j) {
+			System.out.print("\n Both numbers are equal");
+		}else {
+			while(i<j+1) {
+				System.out.print("\t"+i);
+				i++;
+			}
+		}
+	}
+}
+/* Test case: i<=j
+ * Test case: i==j
+ * Test case: i>j
+ */
+
+
+Q4.Java code to print table of N
+--------------------------------
+package whileloop;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+public class PrintTableOfN {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		System.out.print("\nEnter value for N:");
+		int N=Integer.parseInt(br.readLine());
+		int i=1;
+		while(i<11) {
+			//System.out.println(N+"X"+i+"="+N*i);
+			System.out.printf("\n%dX%d=%d", N,i,N*i);
+			i++;
+		}
+	}
+}
+
+
+for loop:
+1.
+for(initialization;condition;increment){
+}
+
+2.
+for(initialization;condition;increment);
+
+3.
+for(;condition;increment){
+
+}
+
+4.
+for(;condition;){
+}
+------------------------------------------------------
+package forloop;
+import java.util.Scanner;
+public class PlayWithNumbers {
+	public void printOneToTen() {
+		//I-P-O
+		for(int num=1;num<11;num++) {
+			System.out.print(num+"\t");
+		}
+	}
+	/*
+	 * *
+	 * * *
+	 * * * *
+	 * * * * *
+	 */
+	public void printStarsTriangle(int N) {
+
+		for(int i=1;i<=N;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+	}
+
+	/*****
+	 **** 
+	 *** 
+	 **  
+	 */
+	public void printStarsTriangle3(int N) {
+		for(int i=1;i<=N;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print(j);
+			}
+			System.out.println();
+		}
+	}
+	/*1
+	 *12 
+	 *123 
+	 *1234
+	 *12345  
+	 */
+	public void printStarsTriangle2(int N) {
+
+		for(int i=1;i<=N;i++) {
+			for(int j=N;j>=i;j--) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+	
+	/*1
+	 *22 
+	 *333 
+	 *4444
+	 *55555  
+	 */
+	
+	/*1
+	 *12 
+	 *234 
+	 *4567
+	 *7891011  
+	 */
+	public static void main(String[] args) {
+		PlayWithNumbers obj=new PlayWithNumbers();
+		Scanner sc=new Scanner(System.in);
+		System.out.print("\nEnter value for N:");
+		int N=sc.nextInt();
+		//obj.printOneToTen();
+		//obj.printStarsTriangle(N);
+		//obj.printStarsTriangle2(N);
+		obj.printStarsTriangle3(N);
+	}
+}
+
+2. Exit Control loop:
+do..while
+Q1. Write java code for Calculator having menu
+1. add
+2. sub
+3. mul
+4. div
+0. exit
+Enter your choice(0-4):
+---------------------------------------------------
+package dowhileloop;
+import java.util.Scanner;
+public class SmartCalculator {
+	public int addNumbers(int num1,int num2) {
+		return(num1+num2);
+	}
+	public int subNumbers(int num1,int num2) {
+		return(num1-num2);
+	}
+	public int mulNumbers(int num1,int num2) {
+		return(num1*num2);
+	}
+	public int divNumbers(int num1,int num2) {
+		return(num1/num2);
+	}
+	public static void main(String[] args) {
+		int choice,num1=0,num2=0,res=0;
+		SmartCalculator calc=new SmartCalculator();
+		Scanner sc=new Scanner(System.in);
+		do {
+		System.out.print("\nC A L C U L A T O R");
+		System.out.print("\n1. Add");
+		System.out.print("\n2. Sub");
+		System.out.print("\n3. Mul");
+		System.out.print("\n4. div");
+		System.out.print("\n0. Exit");
+		System.out.print("\nEnter your choice(0-4):");
+		choice=sc.nextInt();
+		if(choice>0 && choice<=4) {
+			System.out.print("\nEnter first number:");
+			num1=sc.nextInt();
+			System.out.print("\nEnter Second number:");
+			num2=sc.nextInt();
+		}
+		switch(choice) {
+		case 1:
+			res=calc.addNumbers(num1, num2);
+			System.out.printf("Sum of %d and %d is %d",num1,num2,res);
+			break;
+		case 2:
+			res=calc.subNumbers(num1, num2);
+			System.out.printf("Subtraction of %d and %d is %d",num1,num2,res);
+			break;
+		case 3:
+			res=calc.mulNumbers(num1, num2);
+			System.out.printf("Multiplication of %d and %d is %d",num1,num2,res);
+			break;
+		case 4:
+			if(num2>0) {
+				res=calc.divNumbers(num1, num2);
+				System.out.printf("division of %d and %d is %d",num1,num2,res);
+			}else {
+				System.err.print("\nSecond number must greater than 0...");
+			}
+			break;
+		case 0:
+			System.out.printf("Calculator terminated..");
+			break;
+		default:
+			System.err.print("\nInvalid choice..valide choice is only 0 to 4..");
+		}
+		}while(choice!=0);
+	}
+}
+Assignment question:
+Q2. Write Java code for making Smart Voter Application which will take name and age of the person and 
+display following message:
+Want to check more voter eligibility(1 for yes, 0 for no)
+//Test case 1: age(0-17), Hi <name>, you can not vote, just enjoy games
+//Test case 2: age(18-120),Hi <name>, Please vote to elect honest leader
+//Test case 3: age>120, Hi <name>, your age is not valid
+
+Q3.Milk shop salling milk
+costPrice=44 per litre
+per customer payment
+profit/loss
+At the end day:
+total payment
+total profit/loss
+---Input required-----
+qty
+choice
+----process----------
+return price per unit
+product or ppu*qty
+totalsale
+totalprofit
+---output expected----
+Total price has to  pay by customer:
+you got profit/loss
+
+Report:
+finally grand sale:
+profit/loss of the day: 
+class MilkSaller
+float costPrice=
+float salePrice
+int totalMilkQty=200
+double totalSale
+double totalProfit
+-----------------------------
+package classandobject;
+
+import java.util.Scanner;
+
+public class MilkSaller {
+	int totalMilkQty;
+	int totalMilkQtySold=0;
+	float otherExpenses;
+	float costPrice;
+	float salePrice;
+	double totalSale=0;
+	/*
+	 * constructor
+	 * 1.Name of constructor exactly same as class name
+	 * 2.It never return any kind of value
+	 * 3.No use of void return type
+	 * 4.Automatically called as soon as object created
+	 * 5.More than one constructor can be created for single class
+	 * 6.It can not override
+	 * 7.It can be overloaded
+	 */
+	public MilkSaller(int milkQty,float cp,float sp,float otherExpenses) {
+		totalMilkQty=milkQty;
+		costPrice=cp;
+		salePrice=sp;
+		
+	}
+	public double sellingMilk(int qty) {
+		double payment;
+		if (totalMilkQty>=(totalMilkQtySold+qty)){
+			totalMilkQtySold=totalMilkQtySold+qty;
+			payment=((salePrice*qty)+0.5);
+			totalSale=totalSale+payment;
+		}else {
+			payment=0;
+			
+		}
+		return(payment);
+	}
+public void infoForCustomer() {
+	System.out.print("\ntotalMilkQty:"+totalMilkQty);
+	System.out.print("\ntotalMilkQtySold:"+totalMilkQtySold);
+	System.out.print("\nsalePrice:"+salePrice);
+}
+
+public void infoForShopkeer() {
+	double profit=0;
+	double remainingMilkQty;
+	double priceUsed=0;
+	System.out.print("\ntotalMilkQty:"+totalMilkQty);
+	remainingMilkQty=totalMilkQty-totalMilkQtySold;
+	System.out.print("\nRemaining milk Qty:"+remainingMilkQty);
+	priceUsed=totalMilkQty*costPrice+otherExpenses;
+	profit=totalSale-(priceUsed-(remainingMilkQty*costPrice));
+	System.out.print("\ntotalSale:"+totalSale);
+	System.out.print("\nprofit:"+profit);
+}
+public static void main(String args[]) {
+	Scanner sc=new Scanner(System.in);
+	int choice,qty;
+	MilkSaller ms=new MilkSaller(100,48,52,200);
+	do {
+		System.out.print("\n1. Selling Milk");
+		System.out.print("\n2. Info For Customer");
+		System.out.print("\n3. Info For Shopkeer");
+		System.out.print("\n0. Exit");
+		System.out.print("\nEnter your choice(0-3):");
+		choice=sc.nextInt();
+		switch(choice) {
+		case 1:
+			System.out.print("\nEnter milk quantity:");
+			qty=sc.nextInt();
+			double amout=ms.sellingMilk(qty);
+			if(amout>0) {
+				System.out.print("\nPlease pay :"+amout+" for milk");
+			}else {
+				System.out.print("\npurchasing milk failed..Required milk greater than remaining");
+			}
+			break;
+		case 2:
+			ms.infoForCustomer();
+			break;
+		case 3:
+			ms.infoForShopkeer();
+			break;
+		case 0:
+			System.out.print("\nApplication terminated...");
+			break;
+		default:
+			System.err.print("\nInvalid option choosen...");
+		}
+		
+	}while(choice!=0);
+}
+}
+Assignment Question:
+Q2.
+Student Class:
+rollno,name,subject marks(corejava,rdbms,servlet and jsp)
+calculate:
+total marks,avgmarks and grade:
+Grade can be calculated:
+marks between:>90   Grade=>A
+marks between:>70   Grade=>B
+marks between:>50   Grade=>C
+marks between:<50   Grade=>D
+inputData()
+outputData()
+calculateGrade()
+findTotal()
+findAverage()
+
+Q3.
+--Class name------------------------------
+BankAccount
+--member variables------------------------
+accountId,name,balance
+--member methods--------------------------
+inputdata(accountId,name,balance) or call parameterized constructor
+depositMoney(double amount)
+withdrawMoney(double amount)
+transferMoeney(accountId,double amount)
+displayData()
+-------------------------------------------
+Validation:
+balance has maintained atleast 1000.
+minimum 500 can be deposite or withdraw
+-----------------------------------------------
+package bank;
+public class BankAccount {
+	private long accountId;
+	private String name;
+	private double balance;
+	//public void inputData(long accountId,String name,double balance) {}
+	public BankAccount(long accountId, String name, double balance) {
+		super();
+		this.accountId = accountId;
+		this.name = name;
+		this.balance = balance;
+	}
+	public long getAccountId() {
+		return accountId;
+	}
+	public void setAccountId(long accountId) {
+		this.accountId = accountId;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public double getBalance() {
+		return balance;
+	}
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+	@Override
+	public String toString() {
+		return "\n accountId=" + accountId + ", name=" + name + ", balance=" + balance;
+	}
+	public void depositMoney(double amount) {
+		if(amount>=500) {
+			balance=balance+amount;
+			System.out.print("\nMoney deposited and the current balance is:"+balance);
+		}else {
+			System.err.print("\nMoney deposited failed due to depositing less than 500 and the current balance is:"+balance);
+		}
+	}
+	
+	public void withdraw(double amount) {
+		if(amount>=500 && (balance-amount>=1000)) {
+			balance-=amount;
+			System.out.print("\nMoney withdraw and the current balance is:"+balance);
+		}else {
+			System.err.print("\nMoney withdraw failed due to either amount less than 500 and balance in insufficient..current balance is:"+balance);
+		}
+	}
+	public void displayData() {
+		System.out.print(this);
+	}
+	public void transferMoeney(double amount,BankAccount bk) {
+		if(amount>=500) {
+			this.withdraw(amount);
+			bk.depositMoney(amount);
+		}else {
+			System.err.print("\namount is less than 500, transaction failed..");
+		}
+	}
+
+}
+
+------------------------
+package bank;
+public class BankService {
+	public static void main(String[] args) {
+		BankAccount account1=new BankAccount(1122345, "Sanjay", 10000);
+		BankAccount account2=new BankAccount(1125432, "Jitendra", 15000);
+		account1.displayData();
+		account2.displayData();
+		account1.depositMoney(1500);
+		account1.depositMoney(400);
+		account1.withdraw(900);
+		account1.transferMoeney(500, account2);
+		account1.displayData();
+		account2.displayData();
+	}
+}
+

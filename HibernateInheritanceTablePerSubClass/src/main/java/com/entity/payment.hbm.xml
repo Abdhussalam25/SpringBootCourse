@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.entity.Payment" table="payment2">
+		<id name="accountId" type="int" column="accountId">
+			<generator class="increment" />
+
+		</id>		
+		<property name="amount" column="amount" />
+
+		<joined-subclass name="com.entity.CreditCard" >
+			<key column="CCrd"/>
+			<property name="creditCardType" column="creditcardtype" type="string"
+				length="15" />
+		</joined-subclass>
+		<joined-subclass name="com.entity.DebitCard" >
+		
+			<key column="DCrd"/>
+			<property name="debitCardType" column="debitcardtype" type="string"
+				length="15" />
+		</joined-subclass>
+
+
+	</class>
+
+</hibernate-mapping>

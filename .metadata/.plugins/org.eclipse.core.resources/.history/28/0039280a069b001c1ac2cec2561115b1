@@ -1,0 +1,54 @@
+package com.training.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class BankTest {
+
+	@BeforeEach
+	void setUp() throws Exception {
+	}
+
+	@Test
+	void testAddNewAccount() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testDepositAmount() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testWithdrawAmount() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testTransferBetweenAccounts() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testRetreiveAll() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSearchById() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testModAccount() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testDelAccount() {
+		fail("Not yet implemented");
+	}
+
+}

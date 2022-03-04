@@ -1,0 +1,17 @@
+package com.bean;
+
+public class Employee {
+
+	  private int empId;
+	  private String empFName;
+	  private String empLastName;
+	  private String address;
+	  private String department;
+	  private float basicSalary;
+
+
+	private double grossSalary;
+
+	
+	
+}

@@ -1,0 +1,64 @@
+package com.training;
+
+public class Account {
+
+	
+	private String AccountName;
+    private int AccountId;
+ 
+    private int balance;
+    
+    private final int minBalance = 5000;
+
+	public Account(String accountName, int accountId, int depositAmount) {
+		super();
+		if(depositAmount >= minBalance) {
+		AccountName = accountName;
+		AccountId = accountId;
+		this.balance = depositAmount;
+		}else {
+			System.err.println("Initial amount has to be greater or equal to minimum balance 5000");
+		}
+		
+		
+	}
+
+	public String getAccountName() {
+		return AccountName;
+	}
+
+	public void setAccountName(String accountName) {
+		AccountName = accountName;
+	}
+	
+	public int getBalance() {
+		return balance;
+	}
+
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+
+	public void depositAmount(int amount) {
+		if(amount >= 1000) 
+		this.balance += amount;
+		else System.err.println("Amount has to be minimum 1000 not less than 1000");
+	}
+	
+	public void withDrawAmount(int amount) {
+		if(balance > minBalance) {
+			if(amount > 1000)
+			
+			
+		}else {
+			
+			System.err.println("Sorry you canot withdraw money as you have only minimum balance in your account");
+		}
+			
+	
+	}
+
+	
+     
+    
+}

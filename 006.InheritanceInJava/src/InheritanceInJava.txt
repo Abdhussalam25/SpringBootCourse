@@ -1,0 +1,165 @@
+Inheritance in java
+1. has a relationship
+2. is a relationship comes under inheritance.
+Inheritance is the process of making new class having existing capabilities as well as new features 
+
+extends keyword can be used
+
+Person:
+firstName
+lastName
+contactNumber
+
+Employee:
+empId
+deptName
+salary
+===Eclipse Example==============================================================
+package com.training;
+public class Person {
+	private String firstName;
+	private String lastName;
+	private String contactNumber;
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public String getContactNumber() {
+		return contactNumber;
+	}
+	public void setContactNumber(String contactNumber) {
+		this.contactNumber = contactNumber;
+	}
+	public Person() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Person(String firstName, String lastName, String contactNumber) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.contactNumber = contactNumber;
+	}
+	@Override
+	public String toString() {
+		return "\nfirstName=" + firstName + ", lastName=" + lastName + ", contactNumber=" + contactNumber;
+	}
+}
+
+package com.training;
+public class Employee extends Person{
+	private int empId;
+	private String deptName;
+	private double salary;
+	public int getEmpId() {
+		return empId;
+	}
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+	public String getDeptName() {
+		return deptName;
+	}
+	public void setDeptName(String deptName) {
+		this.deptName = deptName;
+	}
+	public double getSalary() {
+		return salary;
+	}
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Employee(int empId, String firstName, String lastName, String contactNumber,String deptName, double salary) {
+		super(firstName,lastName,contactNumber);
+		this.empId = empId;
+		this.deptName = deptName;
+		this.salary = salary;
+	}
+	@Override
+	public String toString() {
+		return "\nempId=" + empId + super.toString()+ ", deptName=" + deptName + ", salary=" + salary;
+	}
+}
+
+package com.training;
+public class Service {
+	public static void main(String[] args) {
+		Person person=new Person("Sanjay","Kumar","9818254421");
+		System.out.print(person);
+		System.out.print("\nFirst Name:"+person.getFirstName()+", Last Name:"+person.getLastName());
+		person.setLastName("Chandel");
+		System.out.print("\nFirst Name:"+person.getFirstName()+", Last Name:"+person.getLastName());
+		
+		Employee emp=new Employee(123, "Sanjay", "Kumar", "8587001003", "IT", 260000);
+		System.out.println(emp);
+	}
+}
+================================================================================
+person:
+firstName
+lastName
+contactNumber
+
+employee:
+empId
+deptName
+
+Salary:
+basicSalary
+findGross()
+findDuduct()
+findNet()
+hra(30% of basicSalary)
+da(15%),ta(10%),pf(30),esi(2%)
+grosssalary=basicSalary+hra+da+ta
+deduct=pf+esi
+nessalary=grossSalary-deduct
+================================================================================
+
+class A{
+ int i=22;
+}
+
+class B extends A{
+int i=50;
+}
+
+
+class C extends B{
+int i=40;
+}
+
+public static void main(Strng args[]){
+C c=new C();
+System.out.println(c.i);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

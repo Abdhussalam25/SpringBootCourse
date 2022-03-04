@@ -1,0 +1,19 @@
+package com.training;
+
+public class Account {
+
+	
+	private String AccountName;
+    private int AccountId;
+    private int depositAmount;
+    private int balance;
+    
+    private final int minbalance = 5000;
+
+	public Account() {
+		super();
+	}
+     
+     
+    
+}

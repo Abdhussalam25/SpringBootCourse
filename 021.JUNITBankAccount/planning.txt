@@ -1,0 +1,36 @@
+
+
+Name of Project:BankAccount
+
+    Account: Arraylist
+    1) Add account to arrayList
+    2)deposite amount min 1000
+    3)transfer between one account to another account
+    4) add,retreive,modify,delete
+    
+    
+    ====
+    
+    Account class
+     
+     
+     
+     1)String AccountName;
+     2)int AccountId;
+     3)int balance;
+     
+      5)final minbalance = 5000;
+      
+      constructor
+      constrctorwith parameter      
+      getter and setter
+      
+      deposite amount
+      withdraw amount
+      
+      
+      ======
+      
+      App.java to work with Bank
+      
+    

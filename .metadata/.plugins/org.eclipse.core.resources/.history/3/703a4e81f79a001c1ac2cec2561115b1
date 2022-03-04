@@ -1,0 +1,31 @@
+package com.training.test;
+
+import org.junit.jupiter.api.Test;
+
+import com.training.Account;
+
+import junit.framework.Assert;
+
+class AccountTest {
+  
+	Account account;
+	
+	@Test
+	void testAccount() {
+		account = new Account("salam",131313,6000);
+		
+		Assert.assertEquals(account, account);
+		
+	}
+
+	@Test
+	void testDepositAmount() {
+	
+	}
+
+	@Test
+	void testWithDrawAmount() {
+		
+	}
+
+}

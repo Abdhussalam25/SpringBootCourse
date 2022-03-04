@@ -1,0 +1,109 @@
+
+SERVER -- Servlets/JST
+
+Middleware between client and database/application/
+
+
+SERVER
+
+   javaclass used to extend the capablities of server
+
+3 ways to create servlet/server
+
+1)user defined servlet
+2)generic servlet ----- 
+3)extend HTTPServlet directly
+
+doGet, all informations will be in url
+doPost -- quite sequre -- 
+informations will be in headers 
+
+SERVLET lifeCycle?
+
+init();
+service()
+destry()--- released all resources that servlet consumed.
+garbage collection by JVM.
+
+
+inti method == 
+
+
+web.xml configuration
+
+what do u mean by http is a stateless protocall?
+
+    to make the server not overloaded
+
+http get is specially designed to get resouce which already exists
+post is specially designed creating new resources
+put is for updating resources
+delete is for delete resources
+
+
+===
+SErvlet confign  and servlet context
+
+only one servlet context
+
+include -- wharever the current output you have that also included
+
+
+FILTERS;;;
+
+EVENTS and LISTENERS
+
+Whenever fist time servelet called it is called servelet context event
+
+What are the usage of Servlet Config, 
+What is the usage Servlet Context?
+What is the usage of Listeners?
+What is the usage of Filters?
+usage of enumuration... ====> to store the immutable objects
+
+Enumeration <String>enums=session.getAttributeNames();
+enums.hasMoreElements()
+str=enums.nextElement();
+Enumeration <String>enums=session.getAttributeNames();
+		out.print("<br>Showing session objects added:");
+		String str=null;
+		while(enums.hasMoreElements()) {
+
+			str=enums.nextElement();
+			out.print("<br>"+str+":<input type='text' value='"+session.getValue(str)+"'disabled/>");	
+		}
+
+Important method and its functions of above four?
+
+How to create Session?
+
+HTTPSession session = request.getSession();
+
+session.setAttribute("attributeName","attriburteValue");
+session.getAttribute("attributeName");
+
+============================================
+				FILTERS
+==================================================
+
+headers footers horizontalmenu , verticalmenu, content area
+
+
+
+
+
+Servlet connecting client with jdbc,jni,javaapplication,soapservices,webservices
+
+--->Though servlet can respond to any type of client 
+request they are commonly used in web context.
+
+--->Control part of MVC architecture
+
+---->servlets are platform independent because they are written in java
+servlets are trusted
+it can communicate with applets,databases,or other software via the sockets and RMI mechanisms 
+
+
+
+
+

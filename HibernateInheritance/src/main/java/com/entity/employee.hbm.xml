@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.entity.Employee" table="employee3"
+		discriminator-value="emp">
+		<id name="empId" type="int" column="empid">
+			<generator class="increment">
+				<param name="start"> 101 </param>
+			</generator>
+		</id>
+		<discremininnator column="type" type="string" />
+
+		<property name="empFirstName">
+			<column name="empfirstname"></column>
+		</property>
+		<property name="empLastName">
+			<column name="emplastname"></column>
+		</property>
+		<property name="empEmailId">
+			<column name="empemailid"></column>
+		</property>
+	</class>
+		<subclass name=com.entity.RegularEmployee
+			discriminator-value="reg">
+			<property name="empSalary">
+				<column name="empsalary" type = "float"></column>
+			</property>
+			<property name="empBonus" column = "empbonus" type="float"/>
+		</subclass>
+		<subclass name=com.entity.ContractualEmployee
+			discriminator-value="reg">
+			<property name="payPerHour">
+				<column name="payperhour" type = "float"></column>
+			</property>
+			<property name="projDuration" column = "projduration" type="string"/>
+		</subclass>
+	
+</hibernate-mapping>

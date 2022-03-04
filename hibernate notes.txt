@@ -1,0 +1,176 @@
+Hbernate and maven
+Object Relational Mapping 
+
+Benefits of Hibernate over JDBC
+
+Database Independency. ...
+Reduced the boilerplate code. ...
+Automatic table creation. ...
+Hibernate support inheritance and association mapping. ...
+Exception handling in case of Hibernate and JDBC. ...
+Automatic primary key generation. ...
+First level cache support. ...
+Second-level cache support.
+
+another one tool is HQL
+only supports SQL
+
+What are the problems in JDBC?
+With Jdbc developer has to write database dependent code.
+complex if it is useed in large projects 
+large programming overhead
+
+
+What is persistance? --- no one asked
+
+Why ORM?
+Natural programmin model
+Minimize Line of code LOC
+
+Transient and Persistant
+
+1)1. What is ORM in Hibernate?
+2)What are the advantages of Hibernate over JDBC?
+3)What are some of the important interfaces of Hibernate framework?
+4)What is a Session in Hibernate?
+5)What is a SessionFactory?
+6)What do you think about the statement - “session being a thread-safe object”?
+7)what is 
+8)how detached?
+9)Hibernte Configuration
+10)Datasource properties
+11)Hibernate Architecture
+12)what are the lifecycle operations of hibernate
+13)How to use session 
+14)Creation and usage of session?
+15)Saving object -- if id available it will be update else save
+16)operation available in hibernate equlent to database
+17)Persistance lifecycle
+
+ 18 dto contains only setters and gettors, a
+
+List<Employee> employees = null;
+Employee emp = null;
+int rec = 0
+
+Transaction tx = null;
+Session session = null;
+session  = EmployeeManger.getSession();
+employees = session.createQuery("from employee");
+
+Iterator itr = employees.iterator();
+
+while(itr.hasNext()){
+
+System.out.println(itr.get());
+
+rec++;
+}
+
+
+
+
+public void showRecord(int id){
+
+}
+
+public void modRecord(int id, float salary){
+
+	
+
+}
+
+ <--<property name="dialect">org.hibernate.dialect.MySQLDialect</property> -->
+
+1)Add hibernate-core and mysqlconnector dependency
+1) Create entity
+2)entity.create.xml -- giving details to hibernate how to create a table 
+3)hibernate config.xml -- to establish data base 
+connection permanently untill the application closed.
+4)important interfaces of hibernate
+Session session=new Configuration()
+			.configure("hibernate.cfg.xml")
+			.buildSessionFactory()
+			.openSession();
+Transaction tx = session.beginTransaction
+tx=session.beginTransaction();
+session.save(emp);
+tx.commit();
+
+
+==============================
+
+                   hibernate inheritance----
+
+-----> has a relationship
+-----> Ex Student has a address
+-----> employee has a pf number
+
+Relationship between tables:
+   3types
+  1) One Table per Class hirarchy 
+  2) One Table per Subclass  ------> 
+        forign key relationship between     
+	subclass and parent class  
+  3)  One Table per Concrete   only 2 tables
+          Very less performance but very easy  DONT USE THIS
+          Initiating so many select queries.
+
+dicrininator value is identify from which table that 
+partcular data is comming 
+
+need to understand this one properly...
+
+this is different from one to one and one to many
+
+note collection coming into picture:
+
+java.util.set, map or list
+
+Hibernate Association
+   Unidirectional Association
+      --
+
+============================Hibernate annotations===================
+@Entity,@id,
+
+oneside   mappedby  anotherside joincolum()
+@OneToMany	USER table				|
+
+	@OneToMany(mappedBy="theUser")			|
+	private List<Cart> carts;
+
+		CART Table
+
+	@ManyToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE, 
+			CascadeType.PERSIST,CascadeType.REFRESH}, fetch = FetchType.LAZY)
+	@JoinColumn(name="user_id")
+	private User theUser;
+=========================================
+
+USER		@OneToMany(mappedBy="theUser")
+		private List<Address> address;	
+
+Address:	@ManyToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE, 
+			CascadeType.PERSIST,CascadeType.REFRESH}, fetch = FetchType.LAZY)
+		@JoinColumn(name="user_id")
+		private User theUser; 
+
+===================================
+USER 		@OneToMany(mappedBy="theUser")
+		private List<ProductCount> productCount;  
+
+ProductCount    @ManyToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE, 
+		CascadeType.PERSIST,CascadeType.REFRESH}, fetch = FetchType.LAZY)
+		@JoinColumn(name="user_id")
+		private User theUser;  
+	
+	
+
+@ManyToOne
+@ManyToMany
+
+            
+
+
+

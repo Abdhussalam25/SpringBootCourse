@@ -1,0 +1,54 @@
+package com.training;
+
+public class Account {
+
+	
+	private String AccountName;
+    private int AccountId;
+    private int depositAmount;
+    private int balance;
+    
+    private final int minbalance = 5000;
+
+	public Account(String accountName, int accountId, int depositAmount, int balance) {
+		super();
+		if(depositAmount >= minbalance) {
+		AccountName = accountName;
+		AccountId = accountId;
+		this.balance = depositAmount;
+		}else {
+			System.err.println("Initial amount has to be greater or equal to minimum balance 5000");
+		}
+		
+		
+	}
+
+	public String getAccountName() {
+		return AccountName;
+	}
+
+	public void setAccountName(String accountName) {
+		AccountName = accountName;
+	}
+
+	public int getDepositAmount() {
+		return depositAmount;
+	}
+
+	public void setDepositAmount(int depositAmount) {
+		this.depositAmount = depositAmount;
+	}
+
+	public int getBalance() {
+		return balance;
+	}
+
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+
+
+	
+     
+    
+}

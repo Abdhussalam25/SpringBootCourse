@@ -1,0 +1,30 @@
+package com.hibernate.HibernateManyToMany;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.entities.Student;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        Set hashSet = new HashSet();
+        Transaction tx = null;
+        Configuration cfg = new Configuration();
+        cfg.configure("hibernate.cfg.xml");       
+        SessionFactory sf = cfg.buildSessionFactory();
+        Session session = sf.openSession();        
+        Student student = new Student();
+        
+    }
+}

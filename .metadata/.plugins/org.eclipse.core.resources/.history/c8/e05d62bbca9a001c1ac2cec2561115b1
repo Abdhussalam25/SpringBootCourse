@@ -1,0 +1,12 @@
+import org.junit.jupiter.api.Test;
+
+
+public class CoinTest {
+
+	@Test
+	public static void main(String[] args) {
+		
+
+	}
+
+}

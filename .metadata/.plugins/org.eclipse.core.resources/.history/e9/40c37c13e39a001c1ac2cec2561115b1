@@ -1,0 +1,47 @@
+package com.training;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class FindAllAboutTriangleTest {
+
+	FindAllAboutTriangle rectangle;
+	@BeforeAll
+	static void setUpBeforeClass() throws Exception {
+		//run only once // note static
+		
+	}
+
+	@AfterAll
+	static void tearDownAfterClass() throws Exception {
+		//run only once // note static
+	}
+
+	@BeforeEach
+	void setUp() throws Exception {
+		//runs before each test
+		 rectangle = new FindAllAboutTriangle();
+	}
+
+	@AfterEach
+	void tearDown() throws Exception {
+		//runs after each test
+	}
+
+	@Test
+	void testFindRectangleArea() {
+		
+		assertEquals(120, rectangle.findRectangleArea(10,12) );
+	}
+
+	@Test
+	void testFindRectanglePerimeter() {
+		
+	}
+
+}

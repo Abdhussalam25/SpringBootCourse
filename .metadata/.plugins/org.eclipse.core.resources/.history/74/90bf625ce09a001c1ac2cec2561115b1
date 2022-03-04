@@ -1,0 +1,23 @@
+package com.training.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import com.training.ArithMeticCalculator;
+
+class ArithmeticCalculatorTest {
+
+	@Test
+	void testAddNumbers() {
+		ArithMeticCalculator calc = new ArithmeticCalculator();
+		
+		
+	}
+	
+	@Test
+	void testSubNumber() {
+		
+	}
+	
+}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>First Web Page</title>
+</head>
+<body>
+	  <a href = "Greetings"> click me </a>
+	  <input type="text" name="name"/>
+	  <input type = "submit" value="Submit"/>
+	  
+	  
+</body>
+</html>

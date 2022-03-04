@@ -1,0 +1,39 @@
+Stock Management System(SMS)
+db part:
+table:stock
+attribute			datatype size constraints
+stockid				int(4)			primary key
+stockname            varchar(15)		not null
+stockcurrprice       float(10,2)    
+stockmktcapital     int(10)
+
+java part:
+class:Stock
+stockId	
+stockName 
+stockCurrprice    
+stockMktCapital
+
+constructor default and parameterized
+setter/getter
+toString()
+=========
+interface: StockManager
+	void addStockRecord(Stock stk);
+	void modStockRecord(Stock stk);
+	void delStockRecord(int stockId);
+	void showAllStockRecords();
+	void showStockRecordById(int stockId);
+
+====
+class StockManagerImpl which implement StockManager interface
+======
+class:StockManagerImplService
+
+1. Add Stock
+2. Mod Stock
+3. Del Stock
+4. Show Stocks
+5. Show Stock By Id
+0. Terminate the app
+Enter your choice(0-5):

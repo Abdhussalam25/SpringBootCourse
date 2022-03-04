@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.entity.Payment" table="payment">
+		<id name="paymentId" type="int" column="paymentId">
+			<generator class="increment" />
+
+		</id>
+		<discremininnator column="paymenttype" type="string"
+			length="15" />
+
+		<property name="amount" column="amount" />
+
+		<subclass name=com.entity.Cheque discriminator-value="chk">
+			<property name="checkType" column="checktype" type="string"
+				length="20" />
+		</subclass>
+		<subclass name=com.entity.CreditCard discriminator-value="ccd">
+			<property name="creditCardtype" column="creditcardtype" type="string"
+				length="20" />
+		</subclass>
+		<subclass name=com.entity.Cash discriminator-value="chk">
+			<property name="cashType" column="cashType" type="string"
+				length="20" />
+		</subclass>
+
+	</class>
+
+</hibernate-mapping>

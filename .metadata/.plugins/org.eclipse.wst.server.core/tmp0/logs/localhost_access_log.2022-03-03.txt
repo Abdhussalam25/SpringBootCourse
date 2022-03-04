@@ -1,0 +1,12 @@
+127.0.0.1 - - [03/Mar/2022:09:12:33 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [03/Mar/2022:09:12:35 +0530] "GET /016JSPResponseAndExceptionHandling/FactorialForm.jsp HTTP/1.1" 200 470
+0:0:0:0:0:0:0:1 - - [03/Mar/2022:09:12:44 +0530] "POST /016JSPResponseAndExceptionHandling/FactorialCalculator.jsp HTTP/1.1" 200 315
+0:0:0:0:0:0:0:1 - - [03/Mar/2022:09:12:52 +0530] "POST /016JSPResponseAndExceptionHandling/FactorialCalculator.jsp HTTP/1.1" 500 774
+127.0.0.1 - - [03/Mar/2022:09:23:17 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [03/Mar/2022:09:23:18 +0530] "GET /017.JSPBeansAndExceptionHandling/StudentDataForm.jsp HTTP/1.1" 200 894
+0:0:0:0:0:0:0:1 - - [03/Mar/2022:09:23:31 +0530] "GET /017.JSPBeansAndExceptionHandling/DataSetInStudentBean.jsp?rollNumber=123&firstName=saalm&lastName=basha&contactNumber=9788593057 HTTP/1.1" 500 2376
+127.0.0.1 - - [03/Mar/2022:09:25:20 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [03/Mar/2022:09:25:21 +0530] "GET /017.JSPBeansAndExceptionHandling/StudentDataForm.jsp HTTP/1.1" 200 894
+0:0:0:0:0:0:0:1 - - [03/Mar/2022:09:25:34 +0530] "GET /017.JSPBeansAndExceptionHandling/DataSetInStudentBean.jsp?rollNumber=132&firstName=afsadf&lastName=asff&contactNumber=987989446 HTTP/1.1" 200 612
+127.0.0.1 - - [03/Mar/2022:09:29:16 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [03/Mar/2022:09:29:19 +0530] "GET /018.JSPDatabaseHandling/index.jsp HTTP/1.1" 200 269

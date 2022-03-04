@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="008.SessionManagementByUrlRewrittng">
+        <property name="context-root" value="008.SessionManagementByUrlRewrittng"/>
+        <property name="java-output-path" value="/008.SessionManagementByUrlRewrittng/build/classes"/>
+    </wb-module>
+</project-modules>

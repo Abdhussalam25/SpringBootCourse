@@ -1,0 +1,44 @@
+package com.training.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class AccountTest {
+
+	@BeforeAll
+	static void setUpBeforeClass() throws Exception {
+	}
+
+	@AfterAll
+	static void tearDownAfterClass() throws Exception {
+	}
+
+	@BeforeEach
+	void setUp() throws Exception {
+	}
+
+	@AfterEach
+	void tearDown() throws Exception {
+	}
+
+	@Test
+	void testAccount() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testDepositAmount() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testWithDrawAmount() {
+		fail("Not yet implemented");
+	}
+
+}

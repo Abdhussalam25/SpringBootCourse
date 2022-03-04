@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="E:\SpringBootCourse\021.JUNITBankAccount"/>
+			<item value="E:\SpringBootCourse\019JUNITTestingPurseManger\src\test\java\com\training\test\PurseTest.java"/>
+			<item value="E:\SpringBootCourse\HibernateInheritance"/>
+			<item value="E:\SpringBootCourse"/>
+			<item value="E:\SpringBootCourse\HibernateOneToOne"/>
+			<item value="E:\SpringBootCourse\HibernateCRUD\src\main\java\com\hibernate\HibernateCRUD\EmployeeManager.java"/>
+			<item value="E:\SpringBootCourse\CoreHibernateCRUDOperation"/>
+			<item value="E:\SpringBootCourse\019.DbWithHibernate"/>
+			<item value="E:\SpringBootCourse\CollectionFrameworkForMap"/>
+			<item value="E:\SpringBootCourse\jdbcconnection\src\main\java\jdbcconnection\stockmarketmanagement\DbUtil.java"/>
+			<item value="E:\SpringBootCourse\javaeeprojects"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.training.PurseManager"/>
+			<item value="com.training.JUNITBankAccount"/>
+			<item value="com.training.JunitTestingCalculator"/>
+		</list>
+		<list key="groupId">
+			<item value="com.training"/>
+		</list>
+		<list key="artifactId">
+			<item value="PurseManager"/>
+			<item value="021.JUNITBankAccount"/>
+			<item value="020.JunitTestingCalculator"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="E:\SALAMBASHA-A_Phase-2_Nisha-Waikar-FlyAway"/>
+			<item value="E:\SpringBootCourse\020.CoreJavaWithHibernate"/>
+			<item value="E:\SpringBootCourse\018.JDBCConnectivityWithMySql"/>
+			<item value="E:\018.JDBCConnectivityWithMySql"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="018.JSPDatabaseHandling"/>
+			<item value="013.JSPBasicTagDemo"/>
+			<item value="012.HttpSessionAndAttributeListeners"/>
+			<item value="010.SessionManagementByCookies"/>
+			<item value="008.SessionManagementByUrlRewrittng"/>
+			<item value="007.wDbAccessFromServlet"/>
+			<item value="EmployeeManagementSystem"/>
+			<item value="003.CarryingNDataToServlet"/>
+			<item value="002.CarryingDataFormToServlet"/>
+			<item value="001.WHelloWorldServlet"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="018.JSPDatabaseHandling"/>
+			<item value="013.JSPBasicTagDemo"/>
+			<item value="012.HttpSessionAndAttributeListeners"/>
+			<item value="010.SessionManagementByCookies"/>
+			<item value="008.SessionManagementByUrlRewrittng"/>
+			<item value="007.wDbAccessFromServlet"/>
+			<item value="EmployeeManagementSystem"/>
+			<item value="003.CarryingNDataToServlet"/>
+			<item value="002.CarryingDataFormToServlet"/>
+			<item value="001.WHelloWorldServlet"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.servlet&apos; to &apos;012.HttpSessionAndAttributeListeners/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;011.SessionManagementByHttpSession&apos;&#x0D;&#x0A;- Destination element: &apos;012.HttpSessionAndAttributeListeners/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;011.SessionManagementByHttpSession/src/main/java/com.servlet&apos;" description="Copy package" destination="=012.HttpSessionAndAttributeListeners/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/main\/java&lt;com.servlet" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1646052106600" version="1.0"/>
+</session>

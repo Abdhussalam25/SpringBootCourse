@@ -1,0 +1,447 @@
+
+
+Average speed of itepreter is slower to compare to compiler.
+
+JDK is dependent.  Java Developement Kit
+
+JRE is dependent   -- Java Runtime Environment
+
+Jvm is indepenent --- Java Virtual Machine 
+
+Garbage collection is done by jvm.
+
+.class file is executable in anywhere 	
+
+Console present in IO package
+
+
+javap java.io.Console  --  to get all the methods inside the console via command prompt
+
+==============Primitive DATA TYPES=========
+
+Float -- double 
+
+default it will take it as double to specify this 
+as float we have to addf ex 45.0f , 58.0f
+
+
+==================Wrapper Class ===============
+
+What are the ways to get input from user?
+args
+console
+scanner
+bufferreader
+
+
+identifier  -- keywords   --- datatypes  ---  operators
+
+identifiers --- 
+
+_, $ or any letters must be as starting, 2) caseSensitive 3) 
+
+Sequentially programming
+
+Quality Coding:
+
+// I - P - O cylce  Take Input, Process it and Give the Output
+
+you have to give float where you need accuracy than int
+you have to give double where you need more accurary than float
+
+By name it is convaying everything
+Name should be appropriate for Quality coding
+
+Test always using test case Dont assume it will work perfectly
+
+TEST cases are very very very important.
+
+
+//  Conditions --  Limitations we have more options we are 
+// limiting the options according to some condition
+
+
+TDD  :;  TEST DRIVEN DEVELOPEMENT
+ MAIN FOR AGILE METHOD
+
+
+Types of loops:
+    
+   1) Entry control loops 
+   2) Exit control loops  --- do while loop  only this one.  do while is best for menu driven program. 
+				that first it will run and then it will ask some input from user there this one is very useful
+
+Entry Control loop --   ex Atm machine -- only if pin is correct -- > while loop, for loop 
+
+====do..while loop====================================
+do{
+set of statements;
+}while(expression);
+this loop is best for menu driven program
+Q1. Print table of 5.
+int table=5;
+int i=1;
+do{
+System.out.print("\n"+(table*i));
+i++;
+}while(i<=10);
+
+
+Console -- only works on the black window
+argus -- Run configuration -- use arg
+bufferreader --  we have to handle the exceptions
+
+Think always all posible ways  whenver we are getting the values from user -----
+- Even think as a fool.. and well as idiot as like as u haha..
+
+BufferReader br =  new BufferReader(new InputStreamReader(System.in))	 method should throws IO exception or we have to use try catch block.
+
+Note very imp:
+
+int N = Integer.ParseInt(br.readLine());
+
+Constructors will initilize the member variables automatically.
+
+Note All the business logic should be in private try to call as internally
+
+
+=============================================================================
+
+    				DAY - 3 CONSTRUCTORS
+
+default constructor
+
+parameteraized constructor
+
+copy constructor:   -- > 
+
+public Strudent (Student st){   // Where we want to create an extra ibjed 	
+
+this.rollNumber  = st.rollNumber;
+this.studentName = st.studentName
+
+
+
+}
+
+=======
+Modifiers=======
+===================
+Child Class within the same package --- > public protected, default
+
+A class within the same package ---->  public, protected, default
+
+child Class in the other package ----> public and protected
+
+A separate class in another package --> Only public
+==================
+
+Create an array
+1) Declare a variale to hold the
+2) use new keyword
+3) write the needed values
+
+------In single step 
+
+String names[] = {"hi","hello","the"};
+
+
+
+ Two dimentional ---- 
+1) identical ie -- >  
+2) Non identical array    --> int arr[][] = new int[3][]
+This is called jagged array
+
+
+Array size should not be less than 1;
+
+ Arraysize should be atleast 1;
+
+   It wont give any compile error but throws exception during runtime
+
+
+===========Inheritance============
+
+1) has a realationship
+2) is a relationship comes under inheritance.
+3) Inheritance is the process of making new class having 
+existing capabilities as well as new features
+4) extends keyword can be used.
+
+5) adding new capabilities with existing capabilities 
+
+super() this will call the parent class constructor
+
+super.toString() will call the toString of parent class
+
+POLYMORPHISM:
+=============
+
+compile time -- method overloading
+Rum time --- Constructor overloading 
+
+Method Overloading:
+   same method name with different parameters with in the
+same class.
+
+This is one kind of polymorphism
+
+Not possible by return type only possible by 
+change in parameter -- it may be no of parameter or 
+type of parameters
+
+
+arg types ==> VAR ARGS ===
+
+Variable args and method overloading will result for 
+a solution for repeatedly writing the same method with 
+same parameter type and only no of variables changing
+
+note very important notes has to be write here
+
+Reflection APi -- Through the object if we 
+can find the belonging
+
+IE : Reverse Engineering:--> Finding the Class via object
+
+=======Multilevel Inheritance===================
+
+Pserson -- > Student  ---> Employee
+
+
+
+========= Method Overriding ============
+
+REwriting the method of parent class...
+
+ie redefinition...
+
+
+Class A  {
+int i = 22;
+
+}
+Class B extends A{
+
+int i = 50;
+}
+
+Class C extends B{
+int i = 40;
+}
+
+public static void main (String []args){
+C c = new C();
+sysout(c.i)    //  but how to print A vaue
+}
+
+
+==================
+ 
+   abstract class=== 
+  
+    There is no need of any abstract methods 
+      inside abstract method
+
+    1)Objects cannot be instanciated for abstract
+
+2)To use abstract class this class has to be inherited..
+
+3)Some clss which is extending  the abstract can use the 
+abstract methodsd.
+
+4) Abstract methods inside the abstract class has to be 
+overriden by the child class so here we can give some condtiohs 
+to the child class which mehtods must be provided inside
+the child class body.
+
+
+Interface
+
+It is a mechanism of implementing abstraction
+2) this also is-a relationship
+3) single class can implement multiple interfaces 
+4) multiple inheritance is achieved via interface by using above point
+5) one interface can extend only one interface
+6)every variable in interface is -- >  final static 
+
+
+
+Functional Interface:
+A functional interface is an interface that contains only one abstract method. 
+They can have only one functionality to exhibit.
+
+@FunctionalInterface has to be used to create a functional interface.
+
+From java 1.8 we may have default and static methods inside the Interface
+
+as many default as well as as many static methods can be used
+
+static 
+
+Use of static variable and static methods
+
+It is common one which is belongs to all implementing objects or classes
+So no need in all objects or classes
+
+Therefore static members and static methods are highly advantage in memory management.
+
+
+what is cohession? 
+
+what is coupling?
+  dependency of a class -- If 
+  
+  
+Best practise 
+ we have to use reference of interface and object of implemented class
+
+hide the implementation--> by using same name
+
+Ex: Polygon polygon =  new Square();
+     Polygon polygon =  new Triangle();
+     
+     Advantages:
+     1) hiding the implementation
+     2)Abstrucle to hacker
+     3)Proxy interfaces also for this use only
+     4)Single reference we have 2 objects
+     
+
+
+
+STATIC -----
+
+
+         I) Static Variable:
+          
+            1)Always it has to be initialized because constructor doesn't has anything 
+            to do on the static variables.
+            As we know that constructor is for initializing the objects.
+            2)Static variable belongs to class not instance of class
+            3)  ######## **** 
+             4) static variables can be handled by normal methods also
+             
+         NOTE:     instance variables can not be handled inside the static methods.....
+              
+              
+        II) Static Methods :
+        
+        
+        I want to know that how that getNum1() is  getting no of objects
+        
+        
+        III)static class:
+        
+        IV) static block--- has very high priority that any other methods and it will be executed only once.
+        
+        
+        
+        
+        Difficult is automatically is not difficult 
+        
+        Difficult is the only one which you dont know...
+            
+
+
+    Innerclasses can be static outer class cannot static 
+    
+    What is the use of static inner classes.
+    
+ Anonyms Method:
+ 
+ Abstract methods usage  --- abstract class object instantiated via anonyms methods	
+ 
+ Interface   --- Similar to abstract	
+ 
+ Without even extending normal class we can override a method using anoyms methods 
+ note we can create another one new method inside that anonyms methods also but calling 
+ is not possible via object so it has to be called by the overridden method.
+ 
+ 
+Final  -------variable, class, methods
+
+final variable cannot be just declared.
+
+it has to be given the value and it cannot be changed.
+
+BlankConstant: If final value is not initialized or not given with values
+ we can use the contructor to pass the value.
+
+Final Method:
+
+  Final methods cannot be overriden; It can be inherited but not overridden
+  
+  if we overload an final method then it will be another method inside the same class but it cannot 
+  be redefined in the child class.
+  
+Final Class;; 
+  Final class cannnot be inherited... 
+  There is no childClass or subclass for final class
+  
+  ex: String, Class, RunTime etc
+  
+  
+  Just think about the abstractClass just opposite It cannot create its own object or instance.
+  
+  
+   ===========STRINGS	
+   
+   Every String is an object.
+   
+   String -- 
+   
+      String is immutable.
+      If we change some string that is another one string object is created.
+      
+Refrences 
+  
+======
+
+Autoboxing Unboxing
+
+int num1 = 5;
+Integer num = new Integer(num1);
+
+int num2 = num.intValue();
+
+
+===========
+
+MultiThreading
+
+Thead is the smallest unit of executable
+code that performs a taks.
+Main method is Diomond thread
+start very early endind at the end
+
+Multitasking is the abilitiy to run one
+or more programs concurrently.
+
+Operating System controls the way in which 
+these programs run by scheduling them.
+
+Time elapsed between switching of 
+programs is minuscule.
+
+Concurrency vs Parallelism
+
+Applets -- > its a kind of application
+to get its feature we have to extend
+at this situation we cannot again go for 
+extending Thread which is not possible
+so to create thread we should go for
+implementing runnable interface.
+
+
+
+
+
+
+
+
+
+
+
+
+

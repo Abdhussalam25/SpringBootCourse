@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>First web page<title>
+</head>
+
+<body>
+    <a href = "Greetings"> click me </a>
+
+</body>
+</html>

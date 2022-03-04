@@ -1,0 +1,46 @@
+package com.hibernate.test;
+
+import java.util.Date;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.entities.Employee;
+import com.entities.EmployeeAddress;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	Configuration cfg = new Configuration();
+        cfg.configure("hibernate.cfg.xml");       
+        SessionFactory sf = cfg.buildSessionFactory();
+        Session session = sf.openSession();
+        Transaction tx = null;
+        
+        try {
+        	tx = session.beginTransaction();
+        	EmployeeAddress  address = new EmployeeAddress("121/70a","Tamilnadu","india", 637505l);
+        	
+        	Employee employee = new Employee("salam","baha",new Date(24022022), "9788593057");
+        	
+             session.save(employee);
+             session.save(address);
+             tx.commit();
+              	
+        	
+        }catch(Exception e) {
+        	
+        	e.printStackTrace();
+        }
+        
+        
+
+    }
+}

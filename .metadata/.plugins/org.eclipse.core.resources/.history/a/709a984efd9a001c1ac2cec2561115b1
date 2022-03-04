@@ -1,0 +1,49 @@
+package com.training;
+
+import java.util.List;
+
+public class Bank {
+
+	private List<Account> accounts;
+	
+//	public Account(String accountName, int accountId, int depositAmount) {
+//		super();
+//		if(depositAmount >= minBalance) {
+//		AccountName = accountName;
+//		AccountId = accountId;
+//		this.balance = depositAmount;
+//		
+//		}else {
+//			System.err.println("Initial amount has to be greater or equal to minimum balance 5000");
+//		}
+//				
+//	}
+	
+	private List<Account> addNewAccount(Account account){
+		if(account.getBalance() == 0)
+			System.out.println("Account not created initial deposit amount is min 5000");
+		else {
+			accounts.add(account);	
+			System.out.println("Account added successfully");
+		}
+		return accounts;		
+	}
+	
+	private Account depositAmount(String accountName, int accountId, int amount) {
+		Account temp = null;
+		
+		for(Account acc: accounts) {
+			if(acc.getAccountName().equals(accountName) && acc.getAccountId() == accountId) {
+				acc.depositAmount(amount);
+				temp = acc;
+				break;
+			}
+			
+		}		
+	return temp;		
+	  	
+	}
+	
+	
+	
+}

@@ -1,0 +1,61 @@
+========Comparable interface
+	In this interface,method called cmpareTo can be used  to compare the same type of objects
+	It is used to provide natural sorting order of objects
+	It was introduces in java 1.0
+	
+
+public interface Comparable<E>{
+public int compareTo(Object object);
+
+}
+Note: It is used to compare the current object with specified object.
+
+if it returns positive, when current(this) object is greater than specified object
+if it returns negative, when current(this) object is smaller than specified object
+if it returns zero, when current(this) object is equal to the specified object
+
+Product 
+as user defined class implements Comparable<Product>
+                                 -------------------Note here
+pId
+pName
+pPU
+pQty
+pTotalPrice
+---------
+Constructor
+getter/setter
+compareTo(Product product)
+
+toString
+
+Always
+Plan -- design---start coding---testing --- enhancing
+
+==============Comparator Interface==========
+It is another Interface used to compare two user defined object
+
+public interface Comparator<E>{
+public int compare (object ob1, ob2)
+}
+Note: It is used to compare the Two objects of same type.
+
+if it returns positive, when  object1 is greater than specified object2
+if it returns negative, when  object1 is smaller than specified object2
+if it returns zero, when  object1 is equal to the specified object2
+
+Here we need one extra class and this will be very easy to apply
+
+if type of objects are not compatible for comparison then it throw ClassCastException
+
+Student:
+-------
+rollNumber
+firstName
+marks
+-------
+constructor
+toString()
+compare()
+getters and setters
+--------

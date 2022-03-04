@@ -1,0 +1,49 @@
+DTO=>Data Transaction Object
+=1.======DTO==========
+Employee
+-------------------
+empId
+firstName
+lastName
+deptName
+salary
+---------------------
+create setter/getter
+create default and parameterized constructor
+override toString()
+=2.======Operations has to perform==========
+void addEmployee(emp)
+void getEmployees()
+Employee getEmployeeById(empId)
+Employee modEmployee(empId,firstName,lastName)
+Employee modEmployee(empId,salary)
+Employee modEmployee(empId,deptName)
+Employee modEmployee(empId,firstName,lastName,salary)
+Employee delEmployee(empId)
+Employee SearchEmployee(empId)
+Employee SearchEmployee(searchWord)
+
+
+=3.======Operation Implementation==========
+
+=4.======Operation In Service==========
+===============================================================
+Student
+rollNumber
+firstName
+stream
+marks[] for java,hibernate and spring
+avg and grade(A-D)
+==========================================
+method to add new student
+method to get all students
+method to get student by rollNumber
+method to modify firstName by rollNumber
+method to modify 3 subject marks by adding grace marks to existing subject marks
+method to modify student stream
+method to delete perticuler student by rollNumber 
+method to search perticuler student info by rollNumber
+method to display report having rollNumber,stream and avgMarks
+=3.======Operation Implementation==========
+=4.======Operation In Service==========
+===============================================================

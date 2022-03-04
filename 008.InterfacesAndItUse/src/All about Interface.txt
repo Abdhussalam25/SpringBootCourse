@@ -1,0 +1,94 @@
+What is interface?
+It is a mechanism to achieve abstraction.
+It is a blueprint of a class.
+It has static constants and abstract methods
+Interface fields are public,static and final by default and methods are public as well ab abstract.
+It also represents is-a relationship.
+It can not be instantiated like abstract class.
+Class can implements more than one interface if required.
+One interface can inherite other interface if required.
+From java1.8, we can have method with method body in interface that is called default method.
+
+interface Drawable{
+	void draw(String object);
+	default void message(String object){
+	System.out.print("\nDrawing "+object+"..");
+	}
+}
+class Rectangle implements Drawable{
+public void draw(String object){
+System.out.print("\n"+object+" will be drown");
+}
+}
+
+class InterfaceService{
+public static void main(String args[]){
+Rectangle rectangle=new Rectangle();
+rectangle.draw("Rectangle");
+rectangle.message("Rectangle");
+}
+}
+
+What is functional interface?
+Function interface is an interface having single abstract method.
+========================================================
+interface A:
+i=12;
+
+interface B:
+i=45
+
+interface C:
+i=78
+
+class D implements A,B,C
+
+1. i=?
+2. i=45
+======================================================
+Employee:
+------------
+name,basic,contactNumber;
+------------------
+void showData(){}
+double deduction(int leave){ }
+abstract double totalPay(int leave);
+---------------------------------------------
+SimpleEmployee is exending employee:
+gross_sal=basic+hra(25%)+da(10%)+ta(5%)
+totalpay=gross_sal-deduction
+----------------------------------------------
+Manager:
+---------
+deptName
+========
+void showData(){}
+double totalPay(){}
+gross_sal=basic+hra(30%)+da(15%)+ta(10%)
+totalpay=gross_sal-deduction
+----------------------------------------------
+Director:
+
+void showData(){}
+double totalPay(){}
+gross_sal=basic+hra(35%)+da(20%)+ta(18%)
+totalpay=gross_sal-deduction
+	
+===========================================
+EmployeeService:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

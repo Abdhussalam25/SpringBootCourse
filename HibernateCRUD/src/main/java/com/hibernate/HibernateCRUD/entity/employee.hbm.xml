@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hibernate.HibernateCRUD.entity.Employee" table="employee2">
+		<id name="empId" type="int" column="empid" />
+		<property name="empFirstName">
+			<column name="empfirstname"></column>
+		</property>
+		<property name="empLastName">
+			<column name="emplastname"></column>
+		</property>
+		<property name="empEmailId">
+			<column name="empemailid"></column>
+		</property>
+		<property name="empSalary">
+			<column name="empsalary"></column>
+		</property>
+	</class>
+</hibernate-mapping>

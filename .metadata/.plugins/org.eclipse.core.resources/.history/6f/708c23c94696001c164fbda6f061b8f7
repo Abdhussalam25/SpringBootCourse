@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.entities.EmployeeAddress" table="employeedddress5">
+		<id name="employeeId" type="int" column="employeeId">
+			<generator class="foreign" >
+			  <param name="property"> employeeAddress</param>
+			</generator>
+		</id>				
+		<property name="houseNumber" column = "housenumber"/>
+		<property name="state" column = "state"/>
+		<property name="country" column = "country"/>
+		<property name="pinCode" column = "pincode"/>
+		
+		<one-to-one name="Employee" class = "com.entities.Employee"
+		cascade="all"/>	     
+		     
+	</class>
+
+</hibernate-mapping>

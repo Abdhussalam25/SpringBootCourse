@@ -1,0 +1,33 @@
+package com.training.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import com.training.Account;
+
+class AccountTest {
+  
+	Account account;
+	
+	@Test
+	void testAccount() {
+		account = new Account("salam",131313,6000);
+		
+	}
+
+	@Test
+	void testDepositAmount() {
+	
+	}
+
+	@Test
+	void testWithDrawAmount() {
+		
+	}
+
+}

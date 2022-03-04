@@ -1,0 +1,10 @@
+package com.training;
+
+public class FindAllAboutTriangle {
+
+	public int findRectangleArea(int length, int breath) {
+		
+		  return length*breath;
+	}
+	
+}

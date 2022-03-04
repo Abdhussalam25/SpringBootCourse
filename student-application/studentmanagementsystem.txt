@@ -1,0 +1,20 @@
+================================
+Student
+rollNumber
+firstName
+stream
+marks[] for java,hibernate and spring
+avg and grade(A-D)
+==========================================
+method to add new student
+method to get all students
+method to get student by rollNumber
+method to modify firstName by rollNumber
+method to modify 3 subject marks by adding grace marks to existing subject marks
+method to modify student stream
+method to delete perticuler student by rollNumber 
+method to search perticuler student info by rollNumber
+method to display report having rollNumber,stream and avgMarks
+=3.======Operation Implementation==========
+=4.======Operation In Service==========
+===============================================================

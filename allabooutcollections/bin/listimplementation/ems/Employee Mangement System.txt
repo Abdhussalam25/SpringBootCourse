@@ -1,0 +1,29 @@
+DTO --> Data Transfer Object
+
+Employee as DTO
+
+empId
+firstName
+lastName
+salary
+---------------
+default and parametarized constructor
+getter and setter methods
+override tostring method
+------
+Here we have to plan
+What kind of opearations we will perform?
+Interface
+1)void addEmployee(Employee emp)
+2)List<Employee> allEmployees()
+3)Employee getEmployeeById(int empId)
+4)void UpdateEmployee(int empId,String firstName,String lastName)
+5)void modEmployee(int empId, float salary)
+6)Employee deleteById(int empId)
+7)Employee searchById(int empId)
+
+==============================
+Operation IN service
+Operation Implementation
+
+

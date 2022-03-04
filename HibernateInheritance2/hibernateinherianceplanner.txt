@@ -1,0 +1,8 @@
+Payment
+int paymentId;
+double amount;
+getter and setter only
+
+2) Cheque
+  String chequeType;
+  

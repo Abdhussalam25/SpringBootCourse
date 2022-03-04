@@ -1,0 +1,27 @@
+package com.bean;
+
+import java.util.Set;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "vendor")
+public class Vendor {
+
+	@Id
+	@Column(name = "vendorid",length=10)
+	private int vendorId;
+	
+	private String vendorName;
+	
+	
+	private Set children;
+	
+	
+	
+	
+	
+}

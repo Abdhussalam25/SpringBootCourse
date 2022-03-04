@@ -1,0 +1,66 @@
+package com.entities;
+
+import java.util.Date;
+
+public class Employee {
+	
+	private int employeeId;
+	private String firstName;
+	private	String lastName;
+	private	Date birthDate;
+	private String contactNumber;
+	
+	public Employee() {
+		super();
+	}
+	public Employee(String firstName, String lastName, Date birthDate, String contactNumber
+			) {
+		
+		
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.birthDate = birthDate;
+		this.contactNumber = contactNumber;
+		
+	}
+	public int getEmployeeId() {
+		return employeeId;
+	}
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public Date getBirthDate() {
+		return birthDate;
+	}
+	public void setBirthDate(Date birthDate) {
+		this.birthDate = birthDate;
+	}
+	public String getContactNumber() {
+		return contactNumber;
+	}
+	public void setContactNumber(String contactNumber) {
+		this.contactNumber = contactNumber;
+	}
+	
+	@Override
+	public String toString() {
+		return "Employee employeeId=" + employeeId + ", firstName=" + firstName + ", lastName=" + lastName
+				+ ", birthDate=" + birthDate + ", contactNumber=" + contactNumber;
+	}
+	 
+	
+	
+	
+}
